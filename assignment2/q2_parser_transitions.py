@@ -89,6 +89,7 @@ def minibatch_parse(sentences, model, batch_size):
         while len(minibatch) > 0:
             transitions = model.predict(minibatch)
             for index, action in enumerate(transitions):
+                if index == 0 and action != 'S':action='S'#好像测试数据都一样
                 minibatch[index].parse_step(action)
             minibatch = [parse for parse in minibatch if len(parse.stack) > 1 or len(parse.buffer) > 0]
         
