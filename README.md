@@ -1,4 +1,4 @@
-# CS223n
+# CS224n
 ------
 [斯坦福大学NLP课程(CS224n)主页](http://web.stanford.edu/class/cs224n/index.html)  
 [NLP_CS224n课程个人笔记](https://nocater.github.io/categories/)-暂未部署-  
